@@ -2,7 +2,10 @@
 
 Cybersecurity | Network Security | SOC Analyst (Blue Team)
 
-<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/collins-nwammuo-645482248/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/collins-nwammuo-645482248/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/-LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
 <img src="https://komarev.com/ghpvc/?username=collinsnwammuo&style=flat-square&color=blue" />
 
 ##  👨‍💻 About Me
