@@ -23,6 +23,7 @@ To apply my combined experience in networking, security, cloud, and automation t
 
 | Skill                                         | Associated Project         |
 |-----------------------------------------------|----------------------------|
+| Network Routing & VLAN         | <a href="https://github.com/collinsnwammuo/packet-tracer-projects">VLAN & Routing Lab</a>|
 | SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
 | Security Automation with Shuffle SOAR         | SOC Automation Lab|
@@ -65,7 +66,7 @@ To apply my combined experience in networking, security, cloud, and automation t
 
 🔹 VLAN & Routing Lab
 
-A complete Cisco Packet Tracer lab simulating VLAN segmentation, inter-VLAN routing, and enterprise network topology configuration. Includes hands-on practice with switches, routers, and routing protocols to reinforce practical networking skills.
+A complete Cisco Packet Tracer lab simulating VLAN segmentation, inter-VLAN routing, and enterprise network topology configuration.
 🔗 <a href="https://github.com/collinsnwammuo/packet-tracer-projects">View Project</a>
 
 🔹 Detection Lab
