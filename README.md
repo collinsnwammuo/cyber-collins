@@ -71,7 +71,7 @@ A complete Cisco Packet Tracer lab simulating VLAN segmentation, inter-VLAN rout
 🔹 Detection Lab
 
 A complete SIEM + IDS environment using Elastic, Zeek, and Suricata for hands-on threat detection.
-🔗 <a href="https://github.com/collinsnwammuo/detection-lab">View Project</a>
+🔗 <a href="https://github.com/collinsnwammuo/packet-tracer-projects/tree/main">View Project</a>
 
 🔹 SOC Automation Project
 
