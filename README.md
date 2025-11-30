@@ -62,6 +62,12 @@ To apply my combined experience in networking, security, cloud, and automation t
 </div>
 
 ## 📂 Featured Projects
+
+🔹 VLAN & Routing Lab
+
+A complete Cisco Packet Tracer lab simulating VLAN segmentation, inter-VLAN routing, and enterprise network topology configuration. Includes hands-on practice with switches, routers, and routing protocols to reinforce practical networking skills.
+🔗 <a href="https://github.com/collinsnwammuo/packet-tracer-projects">View Project</a>
+
 🔹 Detection Lab
 
 A complete SIEM + IDS environment using Elastic, Zeek, and Suricata for hands-on threat detection.
