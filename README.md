@@ -62,7 +62,7 @@ To apply my combined experience in networking, security, cloud, and automation t
 
 </div>
 
-## 📂 Featured Projects
+<!-- ## 📂 Featured Projects
 
 🔹 VLAN & Routing Lab
 
@@ -77,7 +77,7 @@ A complete SIEM + IDS environment using Elastic, Zeek, and Suricata for hands-on
 🔹 SOC Automation Project
 
 Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and triage.
-🔗 <a href="https://github.com/collinsnwammuo/soc-automation-lab">View Project</a>
+🔗 <a href="https://github.com/collinsnwammuo/soc-automation-lab">View Project</a> --> 
 
 📊 GitHub Stats
 <div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=collinsnwammuo&show_icons=true&theme=tokyonight" height="150px" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=collinsnwammuo&theme=tokyonight" height="150px" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinsnwammuo&layout=compact&theme=tokyonight" height="150px" /> </div>
