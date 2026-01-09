@@ -89,9 +89,11 @@ Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and tria
   <a href="https://tryhackme.com/p/conwamc">
     <img src="https://tryhackme-badges.vercel.app/api/badges?username=conwamc&theme=dark" alt="TryHackMe Stats" />
   </a>
-    <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6621600" style='border:none;'></iframe>
+    
 </p>
 
+---
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6621600" style='border:none;'></iframe>
 ---
 🤝 Connect With Me.
 
