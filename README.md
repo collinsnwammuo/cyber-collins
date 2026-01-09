@@ -94,9 +94,7 @@ Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and tria
 
 ---
 <img src="https://tryhackme-badges.s3.amazonaws.com/conwamc.png" alt="Your Image Badge" />
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6621600"style='border:none;'>
-    
-</iframe>
+<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6621600" style='border:none;'></iframe>
 ---
 🤝 Connect With Me.
 
