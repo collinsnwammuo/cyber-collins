@@ -80,7 +80,18 @@ Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and tria
 🔗 <a href="https://github.com/collinsnwammuo/soc-automation-lab">View Project</a> --> 
 
 📊 GitHub Stats
-<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=collinsnwammuo&show_icons=true&theme=tokyonight" height="150px" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=collinsnwammuo&theme=tokyonight" height="150px" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinsnwammuo&layout=compact&theme=tokyonight" height="150px" /> </div>
+<div align="center"> <img src="https://github-readme-stats.vercel.app/api?username=collinsnwammuo&show_icons=true&theme=tokyonight" height="150px" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=collinsnwammuo&theme=tokyonight" height="150px" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=collinsnwammuo&layout=compact&theme=tokyonight" height="150px" /> 
+</div>
+
+---
+### 🕹️ TryHackMe Progress
+<p align="center">
+  <a href="https://tryhackme.com/p/conwamc">
+    <img src="https://tryhackme-badges.vercel.app/api/badges?username=conwamc&theme=dark" alt="TryHackMe Stats" />
+  </a>
+</p>
+
+---
 🤝 Connect With Me.
 
 📩 Email: conwamc@gmail.com
