@@ -85,16 +85,14 @@ Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and tria
 
 ---
 ### 🕹️ TryHackMe Progress
-<p align="center">
+<div align="center">
   <a href="https://tryhackme.com/p/conwamc">
     <img src="https://tryhackme-badges.vercel.app/api/badges?username=conwamc&theme=dark" alt="TryHackMe Stats" />
   </a>
-    
-</p>
+</div>
 
 ---
-<img src="https://tryhackme-badges.s3.amazonaws.com/conwamc.png" alt="Your Image Badge" />
-[![TryHackMe](https://tryhackme-badges.vercel.app/api/badges?username=conwamc&theme=dark)](https://tryhackme.com/p/conwamc)
+
 ---
 🤝 Connect With Me.
 
