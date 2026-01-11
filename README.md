@@ -26,7 +26,7 @@ To apply my combined experience in networking, security, cloud, and automation t
 | Network Routing & VLAN         | <a href="https://github.com/collinsnwammuo/packet-tracer-projects">VLAN & Routing Lab</a>|
 | SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
-| Security Operations Center (SOC) Labs      | <a href="https://tryhackme.com/p/conwamc"></a>TryHackMe Challenges</a>|
+| Security Operations Center (SOC) Labs      | <a href="https://tryhackme.com/p/conwamc">TryHackMe Challenges</a>|
 | Incident Response Planning and Execution      | SOC Automation Lab|
 | Case Management with TheHive                  | SOC Automation Lab|
 | Scripting and Automation for Threat Mitigation | SOC Automation Lab|
