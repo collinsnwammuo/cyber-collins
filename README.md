@@ -1,4 +1,4 @@
-## Hi there 👋🌐 I'm Collins Nwammuo.
+## Hi there 👋🌐 I'm Collins Nwammuo
 
 Cybersecurity | Network Security | SOC Analyst 
 
@@ -26,7 +26,7 @@ To apply my combined experience in networking, security, cloud, and automation t
 | Network Routing & VLAN         | <a href="https://github.com/collinsnwammuo/packet-tracer-projects">VLAN & Routing Lab</a>|
 | SIEM Implementation and Log Analysis          | <a href="https://google.com">Detection Lab</a>|
 | Network Traffic Monitoring and Attack Detection | <a href="https://google.com">Detection Lab</a>|
-| Security Automation with Shuffle SOAR         | SOC Automation Lab|
+| Security Operations Center (SOC) Labs      | <a href="https://tryhackme.com/p/conwamc"></a>TryHackMe Challenges|
 | Incident Response Planning and Execution      | SOC Automation Lab|
 | Case Management with TheHive                  | SOC Automation Lab|
 | Scripting and Automation for Threat Mitigation | SOC Automation Lab|
