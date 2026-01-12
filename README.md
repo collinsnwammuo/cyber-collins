@@ -95,7 +95,7 @@ Integrates Shuffle SOAR, TheHive, and Python scripts to automate alerts and tria
     </a>
 </div>
 
-🤝 Connect With Me.
+🤝 Connect With Me
 
 📩 Email: conwamc@gmail.com
 
