@@ -1,4 +1,4 @@
-## Hi there 👋🌐 I'm Collins Nwammuo,
+## Hi there 👋🌐 I'm Collins Nwammuo
 
 Cybersecurity | Network Security | SOC Analyst 
 
