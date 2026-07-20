@@ -39,8 +39,6 @@ SPL Query Development           Web Policy Enforcement
 
 ## Security Projects
 
-Projects are grouped by function so a reviewer can go straight to the area they care about.
-
 ### 1. Network Forensics & Traffic Analysis
 
 **Wireshark Network Analysis Portfolio**, 10 practical investigations, Kali Linux + Windows 10 home lab.
@@ -61,8 +59,6 @@ Each project includes a full PCAP capture, annotated screenshots, IOC documentat
 | 10 | [Full PCAP Forensics Investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Full%20PCAP%20Forensics) | End to end attack chain reconstruction, formal IR report |
 
 > **Highlight, Project 06:** I investigated a real world malware PCAP from a confirmed NetSupport RAT infection delivered via the SmartApeSG fake browser update campaign. I identified the victim hostname, IP, MAC, Windows username, and full name via LDAP, all from passive network traffic analysis. I reconstructed the full attack chain from the `classicgrand.com` compromise through C2 beaconing at 60 second intervals, extracted all IOCs, and mapped findings to MITRE ATT&CK. [View investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Malware%20PCAP%20Investigation)
-
-**[nmap-recon-lab](https://github.com/collinsnwammuo/nmap-recon-lab)**: reconnaissance and scanning lab covering Nmap scan types and enumeration techniques, with findings tied back to what each scan looks like from the defender's side.
 
 ---
 
@@ -103,9 +99,7 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 
 **[Microsoft-Defender-for-Endpoint](https://github.com/collinsnwammuo/Microsoft-Defender-for-Endpoint)**: hands-on lab work with Microsoft Defender for Endpoint, covering endpoint onboarding, alert triage, and investigation workflow.
 
-**[EDR-XDR](https://github.com/collinsnwammuo/EDR-XDR)**: extended detection and response lab exploring cross-signal correlation between endpoint, network, and identity telemetry.
-
-*Both of these are recent, actively updated labs. Full write-ups and findings are being documented as the work progresses.*
+**[EDR-XDR](https://github.com/collinsnwammuo/EDR-XDR)**: extended detection and response lab exploring cross-signal correlation between endpoint, network, and identity telemetry. 
 
 ---
 
@@ -176,8 +170,6 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 ---
 
 ## Skills & Associated Work
-
-Quick reference for reviewers who want to jump straight to proof of a specific skill.
 
 | Competency | Demonstrated In |
 |---|---|
