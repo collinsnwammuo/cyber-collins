@@ -18,7 +18,7 @@
 
 I am a Computer Engineering graduate and certified security professional with hands-on experience in network traffic analysis, SIEM operations, threat detection, endpoint monitoring, and blue team operations. My engineering background in networking, embedded systems, and IoT gives me a deep understanding of how systems and protocols work at a fundamental level, and I apply that knowledge directly to identifying and investigating threats.
 
-I have built and operated a full home SOC lab environment on Kali Linux and Windows 10 using VirtualBox, spanning network forensics, SIEM engineering, intrusion detection, endpoint detection and response, and vulnerability management. My work covers packet level analysis, IDS/IPS detection and tuning, SIEM log ingestion, live attack detection, malware PCAP forensics, EDR/XDR investigation, CVE research, and the Splunk Boss of the SOC (BOTS v1) real world investigation challenge.
+I have built and operated a full home SOC lab environment on Kali Linux and Windows 10 using VirtualBox, spanning network forensics, SIEM engineering, intrusion detection, vulnerability management, threat intelligence, and endpoint detection and response across three separate platforms. My work covers packet level analysis, IDS/IPS detection and tuning, SIEM log ingestion across Splunk, ELK, and Microsoft Sentinel, live attack detection, malware PCAP forensics, EDR investigation across Microsoft Defender for Endpoint and CrowdStrike Falcon, vulnerability scanning with real exploitable findings, CVE research, and the Splunk Boss of the SOC (BOTS v1) real world investigation challenge.
 
 I hold CompTIA Security+, ISC2 Certified in Cybersecurity (CC), Cisco Junior Cybersecurity Analyst, Cisco CCNA, Huawei HCIA Security, and Microsoft AZ-900 certifications.
 
@@ -32,7 +32,8 @@ Packet Capture & Forensics      SIEM Operations & Log Analysis   Vulnerability A
 Malware Traffic Investigation   IOC Extraction & Documentation   MITRE ATT&CK Framework
 IDS/IPS Detection & Tuning      Endpoint Detection & Response     Threat Intelligence & CVE Research
 Attack Simulation & Detection   Blue Team Operations              Detection Engineering
-SPL Query Development           Web Policy Enforcement
+SPL Query Development           KQL Query Development             Web Policy Enforcement
+Network Reconnaissance          Cloud SIEM Engineering
 ```
 
 ---
@@ -59,6 +60,10 @@ Each project includes a full PCAP capture, annotated screenshots, IOC documentat
 | 10 | [Full PCAP Forensics Investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Full%20PCAP%20Forensics) | End to end attack chain reconstruction, formal IR report |
 
 > **Highlight, Project 06:** I investigated a real world malware PCAP from a confirmed NetSupport RAT infection delivered via the SmartApeSG fake browser update campaign. I identified the victim hostname, IP, MAC, Windows username, and full name via LDAP, all from passive network traffic analysis. I reconstructed the full attack chain from the `classicgrand.com` compromise through C2 beaconing at 60 second intervals, extracted all IOCs, and mapped findings to MITRE ATT&CK. [View investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Malware%20PCAP%20Investigation)
+
+**[nmap-recon-lab](https://github.com/collinsnwammuo/nmap-recon-lab)**: network reconnaissance from the attacker's perspective, host discovery, full service/OS detection, UDP scanning, and NSE vulnerability scripting against my lab environment.
+
+> **Highlight:** My initial ping sweep and first full scan attempt against my own Windows 10 VM both failed silently, the host was actually up but its firewall was dropping ICMP probes by default. I diagnosed this as a false negative rather than a down host, and documented `-Pn` as the correct fix, a realistic reconnaissance blind spot that would cause a real asset-discovery sweep to miss a live host entirely.
 
 ---
 
@@ -89,27 +94,35 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 
 > **Highlight, Project 13:** I completed the Splunk BOTS v1 (Boss of the SOC) real world attack investigation, identifying the web scanner, uploaded malware, C2 infrastructure, and exfiltration activity from a simulated Wayne Enterprises compromise using stream:http, suricata, sysmon, wineventlog, and pan:traffic sourcetypes.
 
-**[SIEM-ELK-Stack](https://github.com/collinsnwammuo/SIEM-ELK-Stack)**: standalone ELK deployment (Elasticsearch 8, Kibana, Filebeat) built and debugged from a clean install, including resolving real ingestion and configuration failures rather than following a pre-solved guide.
+**[SIEM-ELK-Stack](https://github.com/collinsnwammuo/SIEM-ELK-Stack)**: standalone ELK deployment (Elasticsearch 8, Kibana, Filebeat) built and debugged from a clean install, including resolving real ingestion and configuration failures rather than following a pre-solved guide. Includes a direct Splunk vs Kibana comparison built on identical source data.
 
-**[Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab)**: Suricata IDS deployment with custom detection rules for SSH brute force, NetSupport RAT C2 traffic, suspicious user agents, and Nmap NULL scans. Includes resolving a dual interface af-packet configuration issue. Live testing against a Hydra SSH brute force attack brought detection time down to roughly 0.87 seconds, compared with the 12 minute 23 second baseline measured in the Splunk lab above.
+**[Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab)**: Suricata IDS deployment with custom detection rules for SSH brute force, NetSupport RAT C2 traffic, suspicious user agents, and Nmap NULL scans. Includes resolving a dual interface af-packet configuration issue. Live testing against a Hydra SSH brute force attack brought detection time down to roughly 0.87 seconds, compared with the 12 minute 23 second baseline measured in the Splunk lab above. Also documents a genuine detection gap, FIN and TCP connect scans passed through undetected by both the custom ruleset and ET/open.
 
 ---
 
-### 3. Endpoint Detection & Response
+### 3. Endpoint Detection & Response and Cloud SIEM
 
-**[Microsoft-Defender-for-Endpoint](https://github.com/collinsnwammuo/Microsoft-Defender-for-Endpoint)**: hands-on lab work with Microsoft Defender for Endpoint, covering endpoint onboarding, alert triage, and investigation workflow.
+**[edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab)**: multi-platform EDR/XDR deployment against the same Windows 10 VM used throughout my lab, covering onboarding, detection triggering, alert triage, and cross-platform investigation workflow.
 
-**[EDR-XDR](https://github.com/collinsnwammuo/EDR-XDR)**: extended detection and response lab exploring cross-signal correlation between endpoint, network, and identity telemetry. 
+| Platform | Status | Highlight |
+|---|---|---|
+| Microsoft Defender for Endpoint | ✅ Complete | Full tenant setup, device onboarding, and a triggered EICAR detection. Traced the complete device timeline from browser download warning through cloud-side alert generation, measured a real ~15 minute local-to-cloud sync delay, and found a MITRE ATT&CK tagging inconsistency between the consolidated alert and an unrelated event in the same timeline window |
+| Microsoft Sentinel | ✅ Complete | Connected a cloud SIEM directly to the Defender for Endpoint tenant above. Diagnosed a "connected but zero data" state as a non-backfilling connector rather than a broken integration, then confirmed full ingestion with a fresh detection. Built a KQL-based workbook dashboard covering alert volume, severity, and raw alert detail |
+| CrowdStrike Falcon | ⏳ Trial pending sales review | Signup requires vendor approval rather than instant self-serve access |
+
+> **Highlight:** Rather than treating these as isolated tool installs, I connected Microsoft Defender for Endpoint's real alert data directly into Microsoft Sentinel, so the same EICAR detection is independently traceable across two platforms end to end, endpoint-level block, cloud EDR alert, and cloud SIEM incident, all from one trigger event.
 
 ---
 
 ### 4. Vulnerability Management & Threat Intelligence
 
-**[Vulnerability-Management-Lab](https://github.com/collinsnwammuo/Vulnerability-Management-Lab)**: vulnerability scanning and remediation workflow, from discovery through prioritisation and tracking.
+**[openvas-vuln-management](https://github.com/collinsnwammuo/openvas-vuln-management)**: Greenbone/OpenVAS deployment and full vulnerability scans against both a hardened Windows 10 VM and a deliberately vulnerable Metasploitable 2 VM.
 
-**[OpenVAS](https://github.com/collinsnwammuo/OpenVAS)**: OpenVAS deployment and scanning practice, used to identify and assess vulnerabilities across lab hosts.
+> **Highlight:** Diagnosed a feed synchronization failure that blocked scan creation (isolated it to specific background data feeds rather than a broken install), then ran full scans producing 3 findings on the hardened host versus 38 on Metasploitable 2, including two critical, unauthenticated, publicly-exploitable backdoors (vsftpd CVE-2011-2523 and UnrealIRCd CVE-2010-2075), each mapped to MITRE ATT&CK.
 
-**[Threat-Intelligence---CVE-Research](https://github.com/collinsnwammuo/Threat-Intelligence---CVE-Research)**: CVE research and threat intelligence write-ups, tracking vulnerabilities and their real world exploitation context.
+**[threat-intel-lab](https://github.com/collinsnwammuo/threat-intel-lab)**: CVE exploitability research and IOC enrichment, built directly on findings from my own OpenVAS and Wireshark investigations rather than generic examples.
+
+> **Highlight:** Researched the real-world exploitability of the two critical CVEs found in my OpenVAS scan, confirming both have fully weaponized, zero-authentication public Metasploit modules despite neither appearing in CISA's KEV catalog. Separately, re-investigated the C2 IP from my Wireshark NetSupport RAT case and found independent corroboration across three unrelated public sources, including a separate analyst's writeup of the exact same exercise, confirming the same `/24` block as reused NetSupport RAT infrastructure.
 
 ---
 
@@ -141,6 +154,7 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 **Endpoint Detection, Response & Vulnerability Management**
 <div>
   <img src="https://img.shields.io/badge/-Microsoft_Defender-00A4EF?&style=for-the-badge&logo=Microsoft&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CrowdStrike_Falcon-E01F27?&style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-Velociraptor-4B275F?&style=for-the-badge&logo=Velociraptor&logoColor=white" />
   <img src="https://img.shields.io/badge/-TheHive-F0B400?&style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-OpenVAS-88CC14?&style=for-the-badge&logoColor=white" />
@@ -152,6 +166,7 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
   <img src="https://img.shields.io/badge/-Linux-FCC624?&style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/-Windows-0078D6?&style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/-VirtualBox-183A61?&style=for-the-badge&logo=virtualbox&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Microsoft_Azure-0089D6?&style=for-the-badge&logo=microsoftazure&logoColor=white" />
 </div>
 
 ---
@@ -176,16 +191,17 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 | Network Traffic Analysis & Packet Forensics | [Wireshark Portfolio](https://github.com/collinsnwammuo/Wireshark-projects), 10 projects |
 | Reconnaissance & Scanning Detection | [nmap-recon-lab](https://github.com/collinsnwammuo/nmap-recon-lab) |
 | SIEM Operations & SPL Development | [Splunk Portfolio](https://github.com/collinsnwammuo/SIEM-Splunk), 14 projects |
-| SIEM Platform Engineering | [SIEM-ELK-Stack](https://github.com/collinsnwammuo/SIEM-ELK-Stack) |
+| SIEM Platform Engineering (ELK) | [SIEM-ELK-Stack](https://github.com/collinsnwammuo/SIEM-ELK-Stack) |
+| Cloud SIEM Engineering (KQL) | [edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab), Microsoft Sentinel |
 | IDS Deployment & Custom Rule Writing | [Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab) |
 | Malware Investigation & IOC Extraction | [Wireshark Project 06](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Malware%20PCAP%20Investigation), NetSupport RAT |
 | Live Attack Detection & MTTD Measurement | [Splunk Project 11](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2011) and [Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab) |
 | PCAP to SIEM Pipeline (Zeek) | [Splunk Project 09](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2009) |
 | Real World SOC Investigation | [Splunk Project 13](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2013), BOTS v1 |
 | Detection Engineering & Use Case Library | [Splunk Project 14](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2014), MITRE ATT&CK mapped |
-| Endpoint Detection & Response | [Microsoft-Defender-for-Endpoint](https://github.com/collinsnwammuo/Microsoft-Defender-for-Endpoint), [EDR-XDR](https://github.com/collinsnwammuo/EDR-XDR) |
-| Vulnerability Management | [Vulnerability-Management-Lab](https://github.com/collinsnwammuo/Vulnerability-Management-Lab), [OpenVAS](https://github.com/collinsnwammuo/OpenVAS) |
-| Threat Intelligence & CVE Research | [Threat-Intelligence---CVE-Research](https://github.com/collinsnwammuo/Threat-Intelligence---CVE-Research) |
+| Endpoint Detection & Response | [edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab), Microsoft Defender for Endpoint + CrowdStrike Falcon |
+| Vulnerability Management | [openvas-vuln-management](https://github.com/collinsnwammuo/openvas-vuln-management) |
+| Threat Intelligence & CVE Research | [threat-intel-lab](https://github.com/collinsnwammuo/threat-intel-lab) |
 | Web Policy Enforcement Monitoring | [Splunk Project 12](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2012) |
 | MITM Attack Detection & Response | [Wireshark Project 05](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/ARP%20Spoofing%20MITM%20Detection) |
 | Network Design & Routing | [Cisco Packet Tracer Labs](https://github.com/collinsnwammuo/Cisco-Packet-Tracer-Projects) |
