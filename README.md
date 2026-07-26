@@ -51,8 +51,8 @@ Each project includes a full PCAP capture, annotated screenshots, IOC documentat
 | 01 | [TCP Handshake & Session Analysis](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/TCP%20Handshake) | Protocol analysis, flag identification, baseline profiling |
 | 02 | [DNS Traffic Investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/DNS%20Traffic%20Investigation) | Record type analysis, NXDOMAIN detection, DGA indicators |
 | 03 | [Cleartext Credential Capture](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Cleartext%20Credential%20Capture) | HTTP/FTP credential extraction, HTTPS comparison |
-| 04 | [Nmap Scan Detection & Analysis](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Nmap%20Scan%20Detection) | SYN/NULL/XMAS scan signatures, OS fingerprinting, Windows vs Linux behaviour |
-| 05 | [ARP Spoofing / MITM Detection](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/ARP%20Spoofing%20MITM%20Detection) | ARP poisoning, gratuitous ARP analysis, traffic interception |
+| 04 | [Nmap Scan Detection & Analysis](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Nmap%20Scan%20Detection%20%26%20Analysis) | SYN/NULL/XMAS scan signatures, OS fingerprinting, Windows vs Linux behaviour |
+| 05 | [ARP Spoofing / MITM Detection](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/ARP%20Spoofing%20%26%20MITM%20Detection) | ARP poisoning, gratuitous ARP analysis, traffic interception |
 | 06 | [Malware PCAP Investigation](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Malware%20PCAP%20Investigation) | NetSupport RAT C2, SmartApeSG infection chain, IOC extraction |
 | 07 | [SSH Brute Force Detection](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/SSH%20Brute%20Force%20Detection) | Brute force signatures, auth log correlation, event timeline |
 | 08 | [Rogue DHCP Server Detection](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Rogue%20DHCP%20Server%20Detection) | Protocol abuse detection, DORA sequence analysis |
@@ -75,19 +75,19 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 
 | # | Project | Key Skills |
 |---|---------|------------|
-| 01 | [Ingesting Syslog and Apache Logs](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2001) | Multi-source ingestion, sourcetypes, index management |
-| 02 | [Search and Filter Commands](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2002) | SPL search, table, fields, where, dedup, rename |
-| 03 | [Stats and Aggregation](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2003) | stats, top, rare, dc, values, brute force detection |
-| 04 | [Timechart: Visualising Events Over Time](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2004) | timechart, span tuning, attack pattern visualisation |
-| 05 | [Field Extraction with Rex](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2005) | rex, named capture groups, multi-field extraction |
-| 06 | [Eval and Calculated Fields](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2006) | eval, if, case, severity classification, risk scoring |
-| 07 | [SSH Brute Force Dashboard](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2007) | Dashboard builder, multi panel SOC monitoring view |
-| 08 | [Brute Force Detection Alert](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2008) | Scheduled alerts, threshold tuning, MTTD measurement |
-| 09 | [PCAP Ingestion via Zeek](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2009) | Zeek 8.2.0, conn_state analysis, PCAP to SIEM pipeline |
-| 10 | [Correlating Wireshark Findings](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2010) | Multi source correlation, IOC hunting, attack timeline |
-| 11 | [Live SSH Brute Force Detection](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2011) | Live monitoring, MTTD measured at 12 min 23 sec |
-| 12 | [Live Nmap + HTTP Policy Violation Detection](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2012) | Nmap in HTTP logs, web policy enforcement, repeat offender scoring |
-| 13 | [BOTS v1: Boss of the SOC Investigation](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2013) | Real world attack investigation, multi sourcetype correlation |
+| 01 | [Ingesting Syslog and Apache Logs](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Ingesting%20Syslog%20and%20Apache%20Logs) | Multi-source ingestion, sourcetypes, index management |
+| 02 | [Search and Filter Commands](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Search%20and%20Filter%20Commands) | SPL search, table, fields, where, dedup, rename |
+| 03 | [Stats and Aggregation](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Stats%20and%20Aggregation) | stats, top, rare, dc, values, brute force detection |
+| 04 | [Timechart: Visualising Events Over Time](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Timechart%20--%20Visualising%20Events%20Over%20Time) | timechart, span tuning, attack pattern visualisation |
+| 05 | [Field Extraction with Rex](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Field%20Extraction%20with%20Rex) | rex, named capture groups, multi-field extraction |
+| 06 | [Eval and Calculated Fields](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Eval%20and%20Calculated%20Fields) | eval, if, case, severity classification, risk scoring |
+| 07 | [SSH Brute Force Dashboard](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/SSH%20Login%20Dashboard) | Dashboard builder, multi panel SOC monitoring view |
+| 08 | [Brute Force Detection Alert](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Brute%20Force%20Detection%20Alert) | Scheduled alerts, threshold tuning, MTTD measurement |
+| 09 | [PCAP Ingestion via Zeek](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Ingest%20Wireshark%20PCAPs%20via%20Zeek) | Zeek 8.2.0, conn_state analysis, PCAP to SIEM pipeline |
+| 10 | [Correlating Wireshark Findings](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Correlate%20Wireshark%20Findings%20in%20Splunk) | Multi source correlation, IOC hunting, attack timeline |
+| 11 | [Live SSH Brute Force Detection](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Live%20Attack%20Detection%20--%20SSH%20Brute%20Force) | Live monitoring, MTTD measured at 12 min 23 sec |
+| 12 | [Live Nmap + HTTP Policy Violation Detection](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Live%20Attack%20Detection%3A%20Nmap%20Scan%20%2B%20HTTP%20Policy%20Violations) | Nmap in HTTP logs, web policy enforcement, repeat offender scoring |
+| 13 | [BOTS v1: Boss of the SOC Investigation](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/BOTS%20v1%3A%20SOC%20Investigation) | Real world attack investigation, multi sourcetype correlation |
 | 14 | [SOC Detection Use Case Library](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2014) | Detection engineering, MITRE ATT&CK mapping, rule documentation |
 
 > **Highlight, Project 11:** I ran a live SSH brute force attack with Hydra while monitoring Splunk in real time. I measured an actual MTTD of 12 minutes 23 seconds, identified a tuning gap in the alert schedule, and corroborated the attack across three independent evidence sources: Wireshark PCAP, Zeek conn.log, and the Linux auth log.
@@ -102,7 +102,7 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 
 ### 3. Endpoint Detection & Response and Cloud SIEM
 
-**[edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab)**: multi-platform EDR/XDR deployment against the same Windows 10 VM used throughout my lab, covering onboarding, detection triggering, alert triage, and cross-platform investigation workflow.
+**[edr-xdr-lab](https://github.com/collinsnwammuo/EDR-XDR)**: multi-platform EDR/XDR deployment against the same Windows 10 VM used throughout my lab, covering onboarding, detection triggering, alert triage, and cross-platform investigation workflow.
 
 | Platform | Status | Highlight |
 |---|---|---|
@@ -116,11 +116,11 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 
 ### 4. Vulnerability Management & Threat Intelligence
 
-**[openvas-vuln-management](https://github.com/collinsnwammuo/openvas-vuln-management)**: Greenbone/OpenVAS deployment and full vulnerability scans against both a hardened Windows 10 VM and a deliberately vulnerable Metasploitable 2 VM.
+**[openvas-vuln-management](https://github.com/collinsnwammuo/OpenVAS)**: Greenbone/OpenVAS deployment and full vulnerability scans against both a hardened Windows 10 VM and a deliberately vulnerable Metasploitable 2 VM.
 
 > **Highlight:** Diagnosed a feed synchronization failure that blocked scan creation (isolated it to specific background data feeds rather than a broken install), then ran full scans producing 3 findings on the hardened host versus 38 on Metasploitable 2, including two critical, unauthenticated, publicly-exploitable backdoors (vsftpd CVE-2011-2523 and UnrealIRCd CVE-2010-2075), each mapped to MITRE ATT&CK.
 
-**[threat-intel-lab](https://github.com/collinsnwammuo/threat-intel-lab)**: CVE exploitability research and IOC enrichment, built directly on findings from my own OpenVAS and Wireshark investigations rather than generic examples.
+**[threat-intel-lab](https://github.com/collinsnwammuo/Threat-Intelligence---CVE-Research)**: CVE exploitability research and IOC enrichment, built directly on findings from my own OpenVAS and Wireshark investigations rather than generic examples.
 
 > **Highlight:** Researched the real-world exploitability of the two critical CVEs found in my OpenVAS scan, confirming both have fully weaponized, zero-authentication public Metasploit modules despite neither appearing in CISA's KEV catalog. Separately, re-investigated the C2 IP from my Wireshark NetSupport RAT case and found independent corroboration across three unrelated public sources, including a separate analyst's writeup of the exact same exercise, confirming the same `/24` block as reused NetSupport RAT infrastructure.
 
@@ -192,16 +192,15 @@ A complete progression from log ingestion through SPL fundamentals, dashboard bu
 | Reconnaissance & Scanning Detection | [nmap-recon-lab](https://github.com/collinsnwammuo/nmap-recon-lab) |
 | SIEM Operations & SPL Development | [Splunk Portfolio](https://github.com/collinsnwammuo/SIEM-Splunk), 14 projects |
 | SIEM Platform Engineering (ELK) | [SIEM-ELK-Stack](https://github.com/collinsnwammuo/SIEM-ELK-Stack) |
-| Cloud SIEM Engineering (KQL) | [edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab), Microsoft Sentinel |
+| Cloud SIEM Engineering (KQL) | [edr-xdr-lab](https://github.com/collinsnwammuo/EDR-XDR), Microsoft Sentinel |
 | IDS Deployment & Custom Rule Writing | [Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab) |
 | Malware Investigation & IOC Extraction | [Wireshark Project 06](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/Malware%20PCAP%20Investigation), NetSupport RAT |
-| Live Attack Detection & MTTD Measurement | [Splunk Project 11](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2011) and [Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab) |
-| PCAP to SIEM Pipeline (Zeek) | [Splunk Project 09](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2009) |
-| Real World SOC Investigation | [Splunk Project 13](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2013), BOTS v1 |
-| Detection Engineering & Use Case Library | [Splunk Project 14](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2014), MITRE ATT&CK mapped |
-| Endpoint Detection & Response | [edr-xdr-lab](https://github.com/collinsnwammuo/edr-xdr-lab), Microsoft Defender for Endpoint + CrowdStrike Falcon |
-| Vulnerability Management | [openvas-vuln-management](https://github.com/collinsnwammuo/openvas-vuln-management) |
-| Threat Intelligence & CVE Research | [threat-intel-lab](https://github.com/collinsnwammuo/threat-intel-lab) |
+| Live Attack Detection & MTTD Measurement | [Splunk Project 11](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Live%20Attack%20Detection%20--%20SSH%20Brute%20Force) and [Suricata-IDS-Lab](https://github.com/collinsnwammuo/Suricata-IDS-Lab) |
+| PCAP to SIEM Pipeline (Zeek) | [Splunk Project 09](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Ingest%20Wireshark%20PCAPs%20via%20Zeek) |
+| Real World SOC Investigation | [Splunk Project 13](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/BOTS%20v1%3A%20SOC%20Investigation), BOTS v1 |
+| Endpoint Detection & Response | [edr-xdr-lab](https://github.com/collinsnwammuo/EDR-XDR), Microsoft Defender for Endpoint + CrowdStrike Falcon |
+| Vulnerability Management | [openvas-vuln-management](https://github.com/collinsnwammuo/OpenVAS) |
+| Threat Intelligence & CVE Research | [threat-intel-lab](https://github.com/collinsnwammuo/Threat-Intelligence---CVE-Research) |
 | Web Policy Enforcement Monitoring | [Splunk Project 12](https://github.com/collinsnwammuo/SIEM-Splunk/tree/main/Project%2012) |
 | MITM Attack Detection & Response | [Wireshark Project 05](https://github.com/collinsnwammuo/Wireshark-projects/tree/main/ARP%20Spoofing%20MITM%20Detection) |
 | Network Design & Routing | [Cisco Packet Tracer Labs](https://github.com/collinsnwammuo/Cisco-Packet-Tracer-Projects) |
